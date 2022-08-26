@@ -1,5 +1,5 @@
 <div class="position-relative">
-  <div class="card-category card-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('movie_pic_show.jpeg') %>)">
+  <div class="card-category card-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('') %>)">
     <h1><%= @list.name %></h1>
   </div>
   <span class="movie-tag"><%= pluralize(@list.movies.size, "movie") %></span>
@@ -65,4 +65,4 @@
   </div>
 </div>
 
-<%= render "bookmarks/model", list: @list, bookmark: @bookmark %>
+<%= render "bookmarks/modal", list: @list, bookmark: @bookmark %>
